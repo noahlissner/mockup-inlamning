@@ -24,6 +24,8 @@ body {
   flex-direction: column;
 }
 
+/* Header */
+
 header {
   height: 100px;
   display: flex;
@@ -100,6 +102,8 @@ nav {
   font-size: 28px;
 }
 
+/* Main */
+
 main {
   flex: 1;
 }
@@ -117,10 +121,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* position: absolute; */
-  /* top: 0; */
-  /* right: 0; */
-  /* z-index: -1; */
 }
 
 .coffee-bag-img {
@@ -156,7 +156,7 @@ main {
 }
 
 .shop-btn {
-  background-color: var(--color-brown-light);
+  background-color: var(--color-green);
   text-decoration: none;
   color: #000;
   font-weight: 600;
@@ -165,8 +165,7 @@ main {
 }
 
 .shop-btn:hover {
-  color: #fff;
-  background-color: var(--color-brown-dark);
+  background-color: #7db68e;
 }
 
 .coffee-cup {
@@ -216,7 +215,7 @@ main {
 }
 
 .location-btn {
-  background-color: var(--color-green);
+  background-color: var(--color-brown-light);
   text-decoration: none;
   color: #000;
   font-weight: 600;
@@ -225,8 +224,11 @@ main {
 }
 
 .location-btn:hover {
-  background-color: #7db68e;
+  color: #fff;
+  background-color: var(--color-brown-dark);
 }
+
+/* Footer */
 
 .contact-wrapper {
   padding: 20px 0px;
@@ -283,6 +285,7 @@ textarea:focus {
   border: none;
   background-color: var(--color-green);
   transition: all 0.2s;
+  font-weight: 600;
 }
 
 .contact-btn:hover {
@@ -317,8 +320,7 @@ textarea:focus {
   margin-left: 15px;
 }
 
-/* @media screen and (min-width: 640px) {
-} */
+/* Media Queries */
 
 @media screen and (min-width: 768px) {
   .center-menu,

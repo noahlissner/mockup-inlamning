@@ -1,0 +1,399 @@
+@import url("https://use.typekit.net/zit2iph.css");
+
+:root {
+  --font-magneto: magneto, sans-serif;
+  --font-myriad: myriad-pro, sans-serif;
+  --font-poppins: poppins, sans-serif;
+
+  --color-green: #b7dbc2;
+  --color-brown-dark: #744d2a;
+  --color-brown-light: #c6986e;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 100px;
+  display: flex;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+
+  background-color: var(--color-green);
+}
+
+.logo,
+.center-menu,
+.cart-menu {
+  list-style: none;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-family: var(--font-magneto);
+  cursor: pointer;
+}
+
+.center-menu {
+  flex: 2;
+  justify-content: center;
+  font-family: var(--font-poppins);
+  gap: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  display: none;
+}
+
+.center-menu-item:hover {
+  color: var(--color-brown-dark);
+}
+
+.cart-menu {
+  justify-content: flex-end;
+  font-family: var(--font-poppins);
+  gap: 1rem;
+  transition: all 0.2s;
+
+  display: none;
+}
+
+.cart-menu-item {
+  text-decoration: none;
+  color: #000;
+}
+
+.cart {
+  background-color: var(--color-brown-dark);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 30px;
+  transition: all 0.2s;
+}
+
+.cart:hover {
+  background-color: var(--color-brown-light);
+}
+
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+main {
+  flex: 1;
+}
+
+.coffee-bag {
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.coffee-bag-right {
+  background-color: var(--color-green);
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 0; */
+  /* z-index: -1; */
+}
+
+.coffee-bag-img {
+  z-index: 100;
+  height: 70%;
+}
+
+.coffee-bag-left {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.coffee-bag-left-wrapper {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+
+  font-family: var(--font-myriad);
+}
+
+.coffee-bag-left-wrapper > h2 {
+  font-size: 24px;
+}
+
+.coffee-bag-left-wrapper > p {
+  font-size: 14px;
+}
+
+.shop-btn {
+  background-color: var(--color-brown-light);
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  padding: 10px 40px;
+  transition: all 0.2s;
+}
+
+.shop-btn:hover {
+  color: #fff;
+  background-color: var(--color-brown-dark);
+}
+
+.coffee-cup {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.coffee-cup-left {
+  background-color: var(--color-brown-light);
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coffee-cup-img {
+  height: 60%;
+}
+
+.coffee-cup-right {
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coffee-cup-right-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 70%;
+  font-family: var(--font-myriad);
+}
+
+.coffee-cup-right-wrapper > h2 {
+  font-size: 24px;
+}
+
+.coffee-cup-right-wrapper > p {
+  font-size: 14px;
+}
+
+.location-btn {
+  background-color: var(--color-green);
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  padding: 10px 40px;
+  transition: all 0.2s;
+}
+
+.location-btn:hover {
+  background-color: #7db68e;
+}
+
+.contact-wrapper {
+  padding: 20px 0px;
+  padding-bottom: 50px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  font-family: var(--font-myriad);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label p {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.input-field {
+  border: 2px solid #e3e3e3;
+  border-radius: 5px;
+  padding: 10px 10px;
+  width: 100%;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid var(--color-green);
+}
+
+textarea {
+  outline: none;
+  resize: none;
+  border: 2px solid #e3e3e3;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+textarea:focus {
+  border: 2px solid var(--color-green);
+}
+
+.contact-btn {
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--color-green);
+  transition: all 0.2s;
+}
+
+.contact-btn:hover {
+  background-color: #7db68e;
+  cursor: pointer;
+}
+
+.bar {
+  border-top: 1px solid #e3e3e3;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright img {
+  height: 35%;
+}
+
+.copyright-name {
+  color: #000;
+  font-family: var(--font-magneto);
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+/* @media screen and (min-width: 640px) {
+} */
+
+@media screen and (min-width: 768px) {
+  .center-menu,
+  .cart-menu {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    background-color: transparent;
+  }
+
+  .coffee-bag {
+    flex-direction: row;
+  }
+
+  .coffee-bag-right {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .coffee-bag-left {
+    height: 100%;
+    width: 50%;
+  }
+
+  .coffee-bag-left-wrapper,
+  .coffee-cup-right-wrapper {
+    gap: 3rem;
+  }
+
+  .coffee-cup {
+    flex-direction: row;
+  }
+
+  .coffee-cup-right,
+  .coffee-cup-left {
+    width: 50%;
+    height: 100%;
+  }
+
+  .coffee-bag-left-wrapper > h2,
+  .coffee-cup-right-wrapper > h2 {
+    font-size: 32px;
+  }
+
+  .coffee-bag-left-wrapper > p,
+  .coffee-cup-right-wrapper > p {
+    font-size: 18px;
+  }
+
+  .shop-btn,
+  .location-btn {
+    padding: 15px 45px;
+  }
+
+  .contact-wrapper {
+    padding: 100px 0;
+  }
+
+  .copyright-name {
+    font-size: 24px;
+    margin-left: 20px;
+  }
+
+  .copyright img {
+    height: 50%;
+  }
+}
